@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="fileUpload">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
+  <script data-require="ng-file-upload@*" data-semver="10.1.19" src="https://cdn.rawgit.com/danialfarid/ng-file-upload/4cdec8f23fbb2558870b769d5ae59e03c3ab0e44/dist/ng-file-upload.js"></script>
+  <script data-require="ng-file-upload-shim.min.js@*" data-semver="7.2.0" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/7.2.0/ng-file-upload-shim.min.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MyCtrl">
+  <form ng-controller="MyCtrl" name="form">
+    <div align="center"><h1 class="pageTitle">Upload excel to database</h1></div>
+    <div align="center"><h3>{{infotext}}</h3></div>
+    <label for="address">Address:</label>
+    <input class="textInput" type="text" id="address" value={{address}} readonly>
+    <br>
+    <br>
+    <label for="database">Database:</label>
+    <input class="textInput" type="text" id="port" value="{{database}}" readonly>
+    <br>
+    <br>
+    <label for="tableName">Tablename:</label>
+    <input class="textInput" type="text" id="port" value="{{tableName}}" readonly>
+    <br>
+    <br>
+    <label for="username">Username:</label>
+    <input class="textInput" type="text" id="username" value="{{username}}" readonly>
+    <br>
+    <br>
+    <label for="password">Password:</label>
+    <input class="textInput" type="password" ng-model="password" id="pass" required>
+    <br>
+    <br>
+    <input type="file" ngf-select ng-model="file" name="file">
+    <button type="submit" ng-click="submit()">submit</button>
+  </form>
+</body>
+
+</html>
+
+

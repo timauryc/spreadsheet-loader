@@ -1,0 +1,18 @@
+CONTENTS OF THIS FILE
+---------------------
+   
+ * Introduction
+ * Maintainers
+
+
+ INTRODUCTION
+------------
+
+The main objective of spreadsheet-loader is to serve as an interface for the users of the axpo-spreadsheet service
+
+
+MAINTAINERS
+-----------
+
+Current maintainers:
+ * Carlos Timaury - timauryc@gmail.com
